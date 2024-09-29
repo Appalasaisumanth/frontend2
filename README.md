@@ -1,4 +1,4 @@
-https://frontend2-alpha.vercel.app
+https://frontend2-ivory.vercel.app/
 this is the link to the website deployed in vercel
 For login/signup ,backend taking lot of time to respond after that everything working fine
 This is linked list,a 3 sided market place where students will see the recuiters requirement for interns and they will maintain a profile 
