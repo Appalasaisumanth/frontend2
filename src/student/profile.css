@@ -1,0 +1,173 @@
+*
+{
+  
+    font-weight: 100;
+  
+    
+}
+body{
+    height:1000px;
+}
+div{
+    padding:3px;
+}
+ label{
+    width:400px;
+ }   
+/* Ensure that #menu1 is aligned properly */
+#main{
+    height:200px;
+}
+#menu1 {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row-reverse; /* Keeps buttons aligned to the end of the container */
+    padding: 10px;
+    position: absolute;
+    height:150px
+     /* Optional: Adds space inside #menu1 */
+}
+
+/* Styling for buttons within #menu1 */
+#menu1 > button {
+    margin: 10px;
+    color: aquamarine;
+    background-color: grey;
+    font-size: 30px;
+    border: none; /* Optional: Removes default button border */
+    padding: 10px; /* Optional: Adds space inside buttons */
+}
+
+/* Specific styling for the back button */
+#back_button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    z-index: 10; /* Optional: Ensures the back button stays on top of other elements */
+}
+
+/* General button styling */
+button {
+    margin: 10px;
+    color: aquamarine;
+    background-color: grey;
+    font-size: 30px;
+    border: none; /* Optional: Removes default button border */
+    padding: 10px; /* Optional: Adds space inside buttons */
+}
+form{
+    margin-top: 60px;
+}
+input{
+    background-color: black;
+}
+textarea{
+    background-color: black;
+}
+
+/* Styling for form containers */
+form > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Allows wrapping if there are many items */
+}
+
+/* Styling for form labels */
+form > label {
+    margin: 10px; /* Adjusted from 50px for better spacing */
+    width: 0px;
+}
+
+/* Styling for #skills container */
+#skills {
+    display: flex;
+    flex-direction: column; 
+    
+   
+}
+
+/* Styling for individual skill labels and inputs */
+#skills > label
+ {
+    display: flex;
+    flex-direction: row;
+    width:600px;
+   /* Aligns items in the center */
+    
+}
+select>option
+{
+    font-size: 24px;
+}
+
+#skills input
+{
+    margin:0px;
+    padding:0px;
+    border:0px;
+    width:50px;
+    outline: 0px;
+    background-color: gray;
+}
+
+/* Styling for checkbox inputs */
+input[type="checkbox"]:focus {
+    border: none; /* Removes border */
+    outline: none; 
+    box-sizing: none;/* Removes outline */
+   /* Adds space between checkbox and label */
+}
+.profile-preview{
+    height:300px;
+    width:300px;
+}
+#profile-pic{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+   
+}
+#profile-pic>img{
+    top:3%;
+    left:5%;
+    position: fixed;
+    height: 7rem;
+    border: 3px solid black;
+    border-radius: 50%;
+    width:8rem;
+    
+
+}
+#student-company{
+    margin-top: 150px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 50px;
+  }
+  
+  th, td {
+    border-bottom: 3px solid #010000fb;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  th {
+    background-color:black;
+  }
+  
+  button {
+    cursor: pointer;
+    border-radius: 50px;
+  }
+  #page{
+    display: flex;
+    flex-direction: row;
+  }

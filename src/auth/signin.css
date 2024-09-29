@@ -1,0 +1,26 @@
+select,select>option{
+    background-attachment: fixed;
+    background-color: black;
+
+}
+span{
+    font-size: large;
+    margin-left:-90px;
+}
+input{
+    font-size: large;
+    width:300px;
+    text-decoration: none;
+    text-align: center;
+}input:active
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.label2{
+    align-self: flex-start;
+    margin-left:110px;
+}
+.password_con>input{
+    margin-left:40px;
+
+}

@@ -1,0 +1,155 @@
+* {
+    font-size: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+    color: wheat;
+    
+
+   
+   
+}
+
+html, body {
+   
+    margin: 0; /* Remove default margin */
+    overflow:visible;
+}
+
+body {
+    background: url("https://img.freepik.com/premium-photo/abstract-minimalist-dark-background-with-white-geometric-lines-dots_1174990-203478.jpg?w=1060") no-repeat center center fixed;
+   
+    background-size: cover;
+     /* Disable both horizontal and vertical scroll */
+}
+
+#main {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    padding: 10px; /* Add some padding for spacing */
+    position: fixed; /* Fixed position at the top */
+    top: 0;
+    width: 100%; /* Full width */
+    background: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background */
+    z-index: 1000; /* Ensure it stays above other content */
+    box-sizing: border-box;
+    height:50px;
+}
+
+#menu {
+    display: flex;
+    flex-direction: row-reverse;
+    color: aqua;
+}
+
+#menu > button {
+    margin: 5px; /* Adjust margin for compact look */
+    border: 2px solid black;
+    color: aquamarine;
+    background-color: rgb(131, 124, 124);
+    border-radius: 5px;
+    font-size: 36px; 
+    border-color: #fd7e14;
+    display: inline-block;
+  padding: 10px 20px;
+  color: wheat;
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adjust font size for better fit */
+}
+#menu>button:hover,#menu>button:active
+{
+    background-color: #fd7e14;
+    box-shadow: 0 0 20px rgba(253, 126, 20, 0.8);
+}
+
+#content {
+    display: flex;
+    flex-direction: row; /* Align children side by side */
+    margin-top: 60px; /* Adjust margin-top according to #main height */
+    padding: 10px; /* Adjust padding to fit content */
+    height: calc(100vh - 60px); /* Adjust height to fit within viewport minus header */
+     /* Ensure no scrollbars in content */
+}
+
+#home, #home2 {
+    flex: 1; /* Allow both elements to grow and fill available space */
+    margin: 5px; /* Adjust margin for spacing */
+}
+
+#home {
+    color: wheat;
+    font-size: 24px; /* Adjust font size for better fit */
+}
+
+#home2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Center-align items horizontally */
+}
+
+#home2 > img {
+    max-width: 100%; /* Ensure image scales properly */
+    height: auto; /* Maintain aspect ratio */
+    margin: 5px; /* Adjust margin to fit image in viewport */
+}
+
+@media (max-width: 768px) {
+    #menu > button {
+        font-size: 18px; /* Smaller font size for smaller screens */
+    }
+
+    #home {
+        font-size: 18px; /* Adjust font size */
+    }
+
+    #home2 > img {
+        max-width: 100%; /* Ensure images are responsive */
+    }
+}
+select>option
+{
+    font-size: 24px;
+}
+input{
+    background-color: black;
+}
+
+#Home2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    flex-direction: row;
+    margin-top: 100px;
+}
+#Home-home {
+    margin-right: 20px;
+}
+button[type="submit"]
+{
+    background-color: #28a745;
+    color: white;
+}
+#menu1>button
+{
+    background-color: #bed20ac5;
+    color: black; 
+}
+#menu1>button:hover,#menu1>button:active
+{
+    background-color: #f9fd14;
+    box-shadow: 0 0 20px rgba(253, 183, 20, 0.789);
+
+}
+
+input[type="checkbox"]
+{
+    width:35px;
+    height:35px;
+}
