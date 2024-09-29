@@ -4,9 +4,9 @@
     flex-wrap: wrap;
     gap:20px;
     width:50em;
-    height:12 rem;
     margin-top:0px;
     align-content: center;
+    
 }
 #student-map-container{
     background-color:   #00000031;
@@ -44,6 +44,10 @@
     display: flex;
     flex-direction:row;
 
+
+}
+#college-page>button{
+    margin:10px;
 }
 input{
     text-transform: initial;
@@ -96,10 +100,11 @@ p {
 }
 
 #container-profiles-student{
-    margin-top: 250px;
+    margin-top: 200px;
 }
 #page>button{
-    margin:20px;
+    margin-left:20px;
+    margin-right: 20px;
 }
 #redButton{
     border: red;

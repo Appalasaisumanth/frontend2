@@ -112,7 +112,7 @@ useEffect(()=>{
         </div>)}
         <div>
           <label htmlFor="additional_skills">Additional Skills: </label>
-          <p>{formData.additional_skills}</p>
+          {formData.skills.length >0 && (<p >Skills: {formData.skills.join(', ')}</p>)}
         </div>
         <div>
           <label htmlFor="projects">Projects: </label>

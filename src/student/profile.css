@@ -3,18 +3,15 @@
   
     font-weight: 100;
   
+
+  
     
 }
-body{
-    height:1000px;
-}
-div{
-    padding:3px;
-}
+
  label{
     width:400px;
  }   
-/* Ensure that #menu1 is aligned properly */
+
 #main{
     height:200px;
 }

@@ -158,22 +158,22 @@ function AllCompany() {
     return (
                 <>
             <button onClick={() => navigate('/recuiter')}>Back</button>
-            <div id="student-company" style={{ marginTop: "0px" }}>
+            <div id="student-company" style={{ marginTop: "50px" }}>
                 <h1>Available Colleges: {students}</h1>
                 {students > 0 && 
                     
                         <div id="students-map">
                             {data.map((user, index) => (
-                                <div id="student-map-container" key={index} style={{height:"10em"}}>
+                                <div id="student-map-container" key={index}   style={{height:"180px"}}>
                                     <div className='map-menu'>
                                         <div id="image-container"><img src={"/uploads/images/"+user.profile} height={100} alt="Profile" /></div>
                                         <button type="button" style={{ fontSize: "20px" }} onClick={() => handleButton(user)}>Full</button>
 
 
                                     </div>
-                                    <div>Name: {user.username}</div>
-                                    <div>Previous year placed percentage: {user.percentage}</div>
-                                    <div>Rank: {user.ranking}</div>
+                                    <div style={{fontSize:"18px"}}>Name: {user.username}</div>
+                                    <div style={{fontSize:"18px"}}>Previous year placed percentage: {user.percentage}</div>
+                                    <div style={{fontSize:"18px"}}>Rank: {user.ranking}</div>
                                 </div>))}
                             
                                 </div>                
@@ -183,7 +183,7 @@ function AllCompany() {
 
 
 
-                        <div id="page">
+                        <div id="page" style={{marginTop:"0px"}}>
                             {(disablePrev) && (<button onClick={(event) => handlePage('prev', event)}>
                                 Prev
                             </button>)}

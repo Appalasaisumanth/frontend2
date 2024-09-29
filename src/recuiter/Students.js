@@ -158,23 +158,24 @@ function Students() {
     return (
                 <>
             <button onClick={() => navigate('/recuiter')}>Back</button>
-            <div id="student-company" style={{ marginTop: "0px" }}>
+            <div>
+            <div id="student-company" style={{marginTop:"0px"}}>
                 <h1>Available Students: {students}</h1>
                 {students > 0 && 
                     
                         <div id="students-map">
                             {data.map((user, index) => (
-                                <div id="student-map-container" key={index} style={{height:"10em"}}>
+                                <div id="student-map-container" key={index} style={{height:"225px"}}  >
                                     <div className='map-menu'>
                                         <div id="image-container"><img src={"/uploads/images/"+user.profile} height={100} alt="Profile" /></div>
                                         <button type="button" style={{ fontSize: "20px" }} onClick={() => handleButton(user)}>Full</button>
 
 
                                     </div>
-                                    <div>Name: {user.full_name}</div>
-                                    <div>Grade: {user.grade}</div>
-                                    <div>Gender: {user.gender}</div>
-                                    <div>Skills: {user.skills.join(', ')}</div>
+                                    <div style={{fontSize:"18px"}}>Name: {user.full_name}</div>
+                                    <div style={{fontSize:"18px"}} >Grade: {user.grade}</div>
+                                    <div style={{fontSize:"18px"}}>Gender: {user.gender}</div>
+                                    {user.skills.length >0 && (<div style={{fontSize:"18px"}}>Skills: {user.skills.join(', ')}</div>)}
                                 </div>))}
                             
                                 </div>                
@@ -184,14 +185,15 @@ function Students() {
 
 
 
-                        <div id="page">
-                            {(disablePrev) && (<button onClick={(event) => handlePage('prev', event)}>
+                        <div id="page" style={{margin:"0px"}}>
+                            {(disablePrev) && (<button style={{marginTop:"0px"}} onClick={(event) => handlePage('prev', event)}>
                                 Prev
                             </button>)}
                             <button>{page}</button>
                             {(disableNext) && (<button onClick={(event) => handlePage('next', event)}>
                                 Next
                             </button>)}
+                        </div>
                         </div>
                 </>
 

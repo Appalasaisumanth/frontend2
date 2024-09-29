@@ -1,5 +1,5 @@
 body {
-    height: fit-content; /* Ensure body takes full viewport height */
+  
     margin: 0; /* Remove default margin */
     display: flex; /* Use Flexbox for alignment */
     justify-content: center; /* Center horizontally */
@@ -44,7 +44,7 @@ input {
     height: 45px;
     width: 200px;
     font-size: 25px;
-    border-bottom: 2px solid white;
+  
     outline: 1px solid white;
     border-radius: 10px;
     margin:3px ;

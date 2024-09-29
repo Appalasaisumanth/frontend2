@@ -99,7 +99,7 @@ useEffect(()=>{
         </div>
         <div>
           <label>Skills: </label>
-          <p>{formData.skills.join(', ')}</p>
+          {formData.skills.length >0 && (<p >Skills: {formData.skills.join(', ')}</p>)}
         </div>
         <div>
           <label htmlFor="additional_skills">Additional Skills: </label>

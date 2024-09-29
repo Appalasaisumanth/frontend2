@@ -138,10 +138,10 @@ useEffect(()=>{
                 ) : (
                   <div>
                   <p>These are short profiles of your colleges: {students}</p>
-                  <div id="students-map" style={{marginTop:"100px"}}>
+                  <div id="students-map" style={{marginTop:"50px"}}>
                     {data.map((user, index) => (
-                      <div id="student-map-container" style={{height:"",width:""}} key={index}>
-                        <div className='map-menu' style={{height:"",width:""}}>
+                      <div id="student-map-container"  style={{  height:"200px"}} key={index}>
+                        <div className='map-menu' >
                           <div id="image-container"><img src={"/uploads/images/"+user.profile} height={100} alt="Profile" /></div>
                           <button type="button" style={{ fontSize: "20px" }} onClick={() => handleButton(user)}>Full</button>
 

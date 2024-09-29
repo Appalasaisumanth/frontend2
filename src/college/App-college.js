@@ -243,7 +243,7 @@ useEffect(()=>{
     
       {(students===0) && (<p id="sorry" style={{position:"absolute",justifySelf:"center",top:"50%"}}>Sorry, we don't have details of your students.</p>)}
       {(students>0) && (
-      <div id="container-profiles-student">
+      <div id="container-profiles-student" >
         <p>These are short profiles of your students: {students}</p>
         <div id="students-map">
           
@@ -257,7 +257,7 @@ useEffect(()=>{
               <div>Name: {user.full_name}</div>
               <div>Grade: {user.grade}</div>
               <div>Gender: {user.gender}</div>
-              <div>Skills: {user.skills.join(', ')}</div>
+              {user.skills.length >0 && (<div >Skills: {user.skills.join(', ')}</div>)}
             </div>
           ))}
         </div>

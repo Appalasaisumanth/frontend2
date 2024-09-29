@@ -156,10 +156,10 @@ useEffect(()=>{
                       </div>
                     ))}
                   </div>
-                  <div style={{display:"flex",flexDirection:"row"}}>
-                  {disablePrev &&  (maxPage!==1) && (<button type="button" onClick={(event) => handlePage("prev", event)} >Prev</button> )}
-          <span>{page}</span>
-          {disableNext &&  (maxPage!==1) && (<button type="button" onClick={(event) => handlePage("next", event)} >Next</button>)}
+                  <div style={{display:"flex",flexDirection:"row" }} id="college-page">
+                  {disablePrev &&  (maxPage!==1) && (<button type="button" style={{margin:"20px"}}onClick={(event) => handlePage("prev", event)} >Prev</button> )}
+          <span style={{margin:"20px"}}>{page}</span>
+          {disableNext &&  (maxPage!==1) && (<button type="button"  style={{margin:"20px"}} onClick={(event) => handlePage("next", event)} >Next</button>)}
                   </div>
                   </div>
                   

@@ -151,7 +151,7 @@ const applicationhandler =async(event,comp)=>{
           </thead>
           <tbody>
             {data.map((comp, index) => (
-              <tr key={comp.id}>
+              <tr key={index}>
                 <td>{(page-1)*3+index+1}</td>
                 <td> <div id="image-container"> <img src={"/uploads/images/"+comp.profile}  height="50px" width="50px" alt="logo of company"></img></div><div>{comp.username}</div></td>
                 <td>{comp.stipend}</td>

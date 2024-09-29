@@ -12,11 +12,6 @@
    
 }
 
-html, body {
-   
-    margin: 0; /* Remove default margin */
-    overflow:visible;
-}
 
 body {
     background: url("https://img.freepik.com/premium-photo/abstract-minimalist-dark-background-with-white-geometric-lines-dots_1174990-203478.jpg?w=1060") no-repeat center center fixed;
@@ -73,7 +68,7 @@ body {
     flex-direction: row; /* Align children side by side */
     margin-top: 60px; /* Adjust margin-top according to #main height */
     padding: 10px; /* Adjust padding to fit content */
-    height: calc(100vh - 60px); /* Adjust height to fit within viewport minus header */
+  /* Adjust height to fit within viewport minus header */
      /* Ensure no scrollbars in content */
 }
 

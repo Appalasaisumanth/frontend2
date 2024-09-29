@@ -252,7 +252,7 @@ function CollegeProfile() {
             <div>Name: {user.full_name}</div>
             <div>Grade: {user.grade}</div>
             <div>Gender: {user.gender}</div>
-            <div>Skills: {user.skills.join(', ')}</div>
+            {user.skills.length >0 && (<div >Skills: {user.skills.join(', ')}</div>)}
           </div>
         ))}
       </div>
