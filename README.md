@@ -12,4 +12,7 @@ after applying for intern it is recuiter duty to select or not.
  this is my full stack project i welcome an improvements and issues in these 
 
  similarly i also uploaded m backend in another repo  
+ username:student(1-150),password:Student@123(1-150)
+ similarly college 1-15,recuiter 1-15
+ file handly need improvements
  to visit backend follow this link: https://backend-jazee.onrender.com/"
