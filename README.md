@@ -1,3 +1,6 @@
+
+open in brave/safari not in chrome
+
 https://frontend2-ivory.vercel.app/
 this is the link to the website deployed in vercel
 For login/signup ,backend taking lot of time to respond after that everything working fine
